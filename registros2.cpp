@@ -32,12 +32,12 @@ int main (){
     }
 
     if (mayores50 > 0){
-        cout << "La cantidad de personas mayores a 50 es/son: ";
+        cout << "La cantidad de personas mayores a 50 es/son: "<< mayores50;
     } else {
         cout << "No hay personas mayores de 50 anos";
     }
-
-    cout 
+    promedio = sumaE / n;
+    cout << "El promedio de las edades es: " << promedio << endl;
 
     return 0;
 }
