@@ -31,5 +31,13 @@ int main (){
         }
     }
 
+    if (mayores50 > 0){
+        cout << "La cantidad de personas mayores a 50 es/son: ";
+    } else {
+        cout << "No hay personas mayores de 50 anos";
+    }
+
+    cout 
+
     return 0;
 }
