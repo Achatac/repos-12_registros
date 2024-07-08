@@ -10,7 +10,7 @@ int main (){
     };
 
 
-    int n;
+    int n, iMayor, IMenor;
     cout << "Ingrese la cantidad de empleados: "; cin >> n;
     empleado empleados[n];
     for (int i = 0; i < n; i ++){
@@ -19,8 +19,11 @@ int main (){
         cout << "Ingrese el sueldo del empleado " << i + 1 << " : "; cin >> empleados[i].sueldo;
     }
     for (int j = 0; j < n, j++){
-        if ()
-    }
+        if (empleados[j].sueldo > empleados[IMayor].sueldo){
+            IMayor = j;
+        }
+        if (empleados[j].sueldo > empleados[IMenor].sueldo){
+            IMenor = j;
     }
     return 0;
 }
