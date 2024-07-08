@@ -39,5 +39,12 @@ int main (){
     promedio = sumaE / n;
     cout << "El promedio de las edades es: " << promedio << endl;
 
+
+    for (int k = 0; k < n; k ++){
+        cout << "Datos de la persona " << k +1<< " : " << endl; 
+        cout << "Nombre: " << infP[k].nombres << endl;
+        cout << "DNI: " << infP[k].DNI << endl;
+        cout << "Edad: " << infP[k].edad << endl;
+    }
     return 0;
 }
