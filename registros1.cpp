@@ -1,29 +1,35 @@
-//datos del empleado 
 #include <iostream>
 #include <string>
 using namespace std;
-int main (){
 
-    struct empleado {
-        string nombres;
-        char sexo;
-        double sueldo;
-    };
+struct empleado {
+    string nombres;
+    char sexo;
+    double sueldo;
+};
 
+int main() {
     int n, IMayor = 0, IMenor = 0;
-    cout << "Ingrese la cantidad de empleados: "; cin >> n;
+    cout << "Ingrese la cantidad de empleados: "; 
+    cin >> n;
+    cin.ignore();
     empleado empleados[n];
-    for (int i = 0; i < n; i ++){
-        cout << "Ingrese el nombre del empleado " << i + 1 << " : "; cin >> empleados[i].nombres;
-        cout << "Ingrese el sexo del empleado (m/f)" << i + 1 << " : "; cin >> empleados[i].sexo;
-        cout << "Ingrese el sueldo del empleado " << i + 1 << " : "; cin >> empleados[i].sueldo;
-    }
-    for (int j = 0; j < n; j++){
-        if (empleados[j].sueldo > empleados[IMayor].sueldo){
-            IMayor = j;
+
+    for (int i = 0; i < n; i++) {
+        cout << "Ingrese los datos del empleado #" << i + 1 << endl;
+        cout << "Nombre: ";
+        getline(cin, empleados[i].nombres);
+        cout << "Sexo (m/f): "; 
+        cin >> empleados[i].sexo;
+        cout << "Sueldo: "; 
+        cin >> empleados[i].sueldo;
+        cin.ignore();
+
+        if (empleados[i].sueldo > empleados[IMayor].sueldo) {
+            IMayor = i;
         }
-        if (empleados[j].sueldo > empleados[IMenor].sueldo){
-            IMenor = j;
+        if (empleados[i].sueldo < empleados[IMenor].sueldo) {
+            IMenor = i;
         }
     }
 

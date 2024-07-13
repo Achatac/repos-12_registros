@@ -1,4 +1,3 @@
-//estructura persona 
 #include <iostream>
 #include <string>
 using namespace std;
