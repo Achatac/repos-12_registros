@@ -14,15 +14,24 @@ int main (){
     int n;
     cout << "Ingrese el numero de atletas: "; cin >> n;
 
-    Atleta Alt[n];
+    Atleta Atl[n];
 
     for (int i; i < n; i ++ ){
         cout << "Ingrese los datos del atleta #" << i + 1 << endl;
-        cout << "Nombre: " << Alt[i].Nombre;
-        cout << "Pais: " << Alt[i].Pais;
-        cout << "Disciplina" << Alt[i].Disciplina;
+        cout << "Nombre: " << Atl[i].Nombre;
+        cout << "Pais: " << Atl[i].Pais;
+        cout << "Disciplina" <<Atl[i].Disciplina;
+        cout << "Numero de medallas: " << Atl[i].NumMedallas;
     }
 
+    string paiss;
+    cout << "Ingrese un pais: "; cin >> paiss; 
+    for (int j = 0; j < n; j++){
+        if (paiss == Atl[j].Pais){
+            cout << "Nombre: " << Atl[j].Nombre << ", Pais: " << Atl[j].Pais << " ,Disciplina: " << Atl[j].Disciplina << "#Medallas: " << Atl[j].NumMedallas;
+
+        }
+    }
 
     return 0;
 }
