@@ -26,10 +26,19 @@ int main (){
 
     string paiss;
     cout << "Ingrese un pais: "; cin >> paiss; 
+
+    bool hayAtl;
+    int MaxMedallas = 0;
+    Atleta Pmejor;
+
     for (int j = 0; j < n; j++){
         if (paiss == Atl[j].Pais){
             cout << "Nombre: " << Atl[j].Nombre << ", Pais: " << Atl[j].Pais << " ,Disciplina: " << Atl[j].Disciplina << "#Medallas: " << Atl[j].NumMedallas;
-
+            if (Atl[j].NumMedallas > MaxMedallas){
+                Pmejor = Atl[j];
+                MaxMedallas = Atl[j].NumMedallas;
+            }
+            hayAtl = true;
         }
     }
 
