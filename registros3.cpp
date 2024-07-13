@@ -48,7 +48,7 @@ int main() {
                 }
             }
             if (!hayMes) {
-                cout << "No hay personas que cumplan años en este mes." << endl;
+                cout << "No hay personas que cumplan anios en este mes." << endl;
             }
         } else {
             cout << "Valor incorrecto. Intente de nuevo." << endl;
