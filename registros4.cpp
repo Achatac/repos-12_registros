@@ -42,5 +42,10 @@ int main (){
         }
     }
 
+    if (hayAtl){
+        cout << "El atleta con el mayor numero de medallas de " << paiss << " es: " << Pmejor.Nombre << " con " << Pmejor.NumMedallas << " medallas." << endl;
+    } else {
+        cout << "No se encontraron atletas del pais " << paiss << "." << endl;
+    }
     return 0;
 }
